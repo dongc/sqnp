@@ -25,17 +25,10 @@
         <module>service</module>
         <module>web</module>
         <module>dao</module>
-        <module>api</module>
+        <module>common</module>
     </modules>
 
-    <!-- version param-->
     <properties>
-        <sqnp.web.version>0.0.1-SNAPSHOT</sqnp.web.version>
-        <sqnp.service.version>0.0.1-SNAPSHOT</sqnp.service.version>
-        <sqnp.domain.version>0.0.1-SNAPSHOT</sqnp.domain.version>
-        <sqnp.dao.version>0.0.1-SNAPSHOT</sqnp.dao.version>
-        <sqnp.api.version>0.0.1-SNAPSHOT</sqnp.api.version>
-
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
@@ -85,17 +78,32 @@
         </dependencies>
     </dependencyManagement>
 
+    <!--<distributionManagement>-->
+    <!--<repository>-->
+    <!--<id>nexus</id>-->
+    <!--<name>nexus-releases</name>-->
+    <!--<url>http://192.168.99.100:32768/repository/maven-releases/-->
+    <!--</url>-->
+    <!--</repository>-->
+    <!--<snapshotRepository>-->
+    <!--<id>nexus</id>-->
+    <!--<name>nexus-snapshots</name>-->
+    <!--<url>http://192.168.99.100:32768/repository/maven-snapshots/-->
+    <!--</url>-->
+    <!--</snapshotRepository>-->
+    <!--</distributionManagement>-->
+
     <distributionManagement>
         <repository>
             <id>nexus</id>
             <name>nexus-releases</name>
-            <url>http://192.168.99.100:32768/repository/maven-releases/
+            <url>http://192.168.0.237:8081/repository/maven-releases/
             </url>
         </repository>
         <snapshotRepository>
             <id>nexus</id>
             <name>nexus-snapshots</name>
-            <url>http://192.168.99.100:32768/repository/maven-snapshots/
+            <url>http://192.168.0.237:8081/repository/maven-snapshots/
             </url>
         </snapshotRepository>
     </distributionManagement>

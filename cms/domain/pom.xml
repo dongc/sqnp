@@ -5,22 +5,16 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.sqnp</groupId>
-    <artifactId>domain</artifactId>
-    <version>${sqnp.domain.version}</version>
-    <packaging>jar</packaging>
-
-    <!-- <parent>
-          <groupId>org.springframework.boot</groupId>
-          <artifactId>spring-boot-starter-parent</artifactId>
-          <version>1.5.3.RELEASE</version>
-          <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;
-      </parent>-->
     <parent>
         <groupId>com.sqnp</groupId>
         <artifactId>cms</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
+
+    <groupId>com.sqnp</groupId>
+    <artifactId>domain</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
@@ -30,17 +24,17 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.sqnp</groupId>
-            <artifactId>dao</artifactId>
+            <artifactId>service</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sqnp</groupId>
+            <artifactId>common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>

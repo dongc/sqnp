@@ -4,33 +4,37 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.sqnp</groupId>
-    <artifactId>dao</artifactId>
-    <version>${sqnp.dao.version}</version>
-    <packaging>jar</packaging>
-
-    <!-- <parent>
-         <groupId>org.springframework.boot</groupId>
-         <artifactId>spring-boot-starter-parent</artifactId>
-         <version>1.5.3.RELEASE</version>
-         <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;
-     </parent>-->
     <parent>
         <groupId>com.sqnp</groupId>
         <artifactId>cms</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
+    <groupId>com.sqnp</groupId>
+    <artifactId>dao</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+
     <dependencies>
+        <!-- mybatis 配置 -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
         </dependency>
+
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
         </dependency>
+        <!-- mybatis 代码生成配置-->
+
+        <dependency>
+            <groupId>com.sqnp</groupId>
+            <artifactId>common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
 

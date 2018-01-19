@@ -1,19 +1,19 @@
-package com.sqnp.components;
+package com.sqnp.common.redis.impl;
 
+import com.sqnp.common.redis.IRedisService;
 import io.protostuff.LinkedBuffer;
 import io.protostuff.ProtobufIOUtil;
 import io.protostuff.Schema;
 import io.protostuff.runtime.RuntimeSchema;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
 /**
- * Created by dongc on 2017/8/16.
+ * Created by dongc on 19/01/2018.
  */
-@Service
-public class RedisServiceImpl implements IRedisService {
+public class RedisServiceimpl implements IRedisService {
+
     // 此处直接注入即可
     @Autowired
     private JedisPool jedisPool;
@@ -55,6 +55,4 @@ public class RedisServiceImpl implements IRedisService {
                 jedis.close();
         }
     }
-
-
 }
